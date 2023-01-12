@@ -1,0 +1,164 @@
+@import "vars.scss";
+@import "mixins.scss";
+
+body{
+	margin: 0;
+}
+
+.bg_white{
+	background: $white; 
+}
+
+.fixed{
+	position: fixed;  
+	top: 0;  
+	z-index: 100;  
+	width: 100%; 
+}
+
+.header{
+	height: 56px;
+
+	.logo{
+		margin-right: 32px;
+		
+		svg{
+			height: 32px;
+			width: 32px;
+			fill: $primary;
+		}
+	}
+
+	.menu{
+		display: flex;
+		padding: 0;
+		margin: 0;
+
+		li{
+			margin-right: 16px;
+			list-style-type: none;
+
+			// у последнего тега "li" меню убираем отступы
+			&:last-child{
+				margin-right: 0;
+			}
+		}
+
+		
+
+		p{
+			@include font;
+
+			margin: 0;
+			color: #secondary;
+			transition: $naw_transition;
+			font-weight: 400;
+
+		}
+
+		a{
+			display: flex;
+			align-items: center;
+			text-decoration: none;
+
+			&:hover svg{
+				fill: $primary;
+			}
+
+			&:hover p{
+				color: $primary;
+			}
+
+			&:visited{
+				color: $secondary;
+			}
+		}
+
+	}
+
+	.naw_icon{
+		display: flex;
+		align-items: center;
+		justify-content: center;
+		margin-right: 4px;
+
+		svg{
+			fill: $secondary;
+			transition: $naw_transition;
+		}
+	}
+	
+	.search{
+		position: relative;
+
+		svg{
+			position: absolute;
+			left: 8px;
+			top: 0;
+			bottom: 0;
+			margin: auto;
+
+			fill: $secondary;
+			height: 24px;
+			width: 24px;
+		}
+
+		input{
+			@include font;
+
+			font-size: 16px;
+			color: $dark;
+			width: 168px;
+			border-radius: 20px;
+			padding: 8px;
+			border: $gray-400 solid 1px;
+
+			padding-left: 44px;
+
+
+			&::placeholder{
+				color: $secondary;
+			}
+
+			
+		}
+		
+	}
+
+	.profile{
+		display: flex;
+		align-items: center;
+		margin-left: 24px;
+
+		img{
+			margin-left: 12px;
+			border-radius: 16px;
+			height: 32px;
+			width: 32px;
+		}
+
+		p{
+			@include font;
+
+			font-weight: bold;
+			color: $dark;
+		}
+	}
+
+	.burger{
+		margin-left: 32px;
+		display: none;
+
+		img{
+			height: 32px;
+			width: 32px;
+		}
+	}
+
+}
+
+.contant{
+	background: $contant_bg;
+	margin-top: 56px;
+}
+

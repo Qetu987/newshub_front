@@ -1,0 +1,148 @@
+body {
+  margin: 0;
+}
+
+.bg_white {
+  background: #fff;
+}
+
+.fixed {
+  position: fixed;
+  top: 0;
+  z-index: 100;
+  width: 100%;
+}
+
+.header {
+  height: 56px;
+}
+
+.header .logo {
+  margin-right: 32px;
+}
+
+.header .logo svg {
+  height: 32px;
+  width: 32px;
+  fill: #0d6efd;
+}
+
+.header .menu {
+  display: flex;
+  padding: 0;
+  margin: 0;
+}
+
+.header .menu li {
+  margin-right: 16px;
+  list-style-type: none;
+}
+
+.header .menu li:last-child {
+  margin-right: 0;
+}
+
+.header .menu p {
+  font-family: 'Inter', sans-serif;
+  font-size: 14px;
+  margin: 0;
+  color: #secondary;
+  transition: 0.3s;
+  font-weight: 400;
+}
+
+.header .menu a {
+  display: flex;
+  align-items: center;
+  text-decoration: none;
+}
+
+.header .menu a:hover svg {
+  fill: #0d6efd;
+}
+
+.header .menu a:hover p {
+  color: #0d6efd;
+}
+
+.header .menu a:visited {
+  color: #6c757d;
+}
+
+.header .naw_icon {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-right: 4px;
+}
+
+.header .naw_icon svg {
+  fill: #6c757d;
+  transition: 0.3s;
+}
+
+.header .search {
+  position: relative;
+}
+
+.header .search svg {
+  position: absolute;
+  left: 8px;
+  top: 0;
+  bottom: 0;
+  margin: auto;
+  fill: #6c757d;
+  height: 24px;
+  width: 24px;
+}
+
+.header .search input {
+  font-family: 'Inter', sans-serif;
+  font-size: 14px;
+  font-size: 16px;
+  color: #212529;
+  width: 168px;
+  border-radius: 20px;
+  padding: 8px;
+  border: #ced4da solid 1px;
+  padding-left: 44px;
+}
+
+.header .search input::placeholder {
+  color: #6c757d;
+}
+
+.header .profile {
+  display: flex;
+  align-items: center;
+  margin-left: 24px;
+}
+
+.header .profile img {
+  margin-left: 12px;
+  border-radius: 16px;
+  height: 32px;
+  width: 32px;
+}
+
+.header .profile p {
+  font-family: 'Inter', sans-serif;
+  font-size: 14px;
+  font-weight: bold;
+  color: #212529;
+}
+
+.header .burger {
+  margin-left: 32px;
+  display: none;
+}
+
+.header .burger img {
+  height: 32px;
+  width: 32px;
+}
+
+.contant {
+  background: #F2F2F2;
+  margin-top: 56px;
+}
