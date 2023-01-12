@@ -157,8 +157,26 @@ body{
 
 }
 
+footer{
+
+	.rools{
+		@include font;
+		color: $secondary;
+
+		a{
+			text-decoration: none;
+		}
+
+		a:visited{
+			color: $secondary;
+		}
+	}
+}
+
 .contant{
 	background: $contant_bg;
 	margin-top: 56px;
 }
+
+
 

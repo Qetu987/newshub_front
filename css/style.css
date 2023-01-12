@@ -142,6 +142,20 @@ body {
   width: 32px;
 }
 
+footer .rools {
+  font-family: 'Inter', sans-serif;
+  font-size: 14px;
+  color: #6c757d;
+}
+
+footer .rools a {
+  text-decoration: none;
+}
+
+footer .rools a:visited {
+  color: #6c757d;
+}
+
 .contant {
   background: #F2F2F2;
   margin-top: 56px;
