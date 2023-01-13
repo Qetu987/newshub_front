@@ -1,4 +1,4 @@
-@mixin font {
+@mixin font ($f_size:14px){
 	font-family: 'Inter', sans-serif;
-	font-size: 14px;
+	font-size: $f_size;
 }
