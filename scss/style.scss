@@ -236,25 +236,17 @@ footer{
 	p{
 		border-radius: 16px;
 		padding: 8px 16px;
+		margin: 0;
 	}
 
 }
 
 .btn-primary{
-	p{
-		color: $white;
-		background: $primary;
-		transition: $naw_transition;
-	}
+	@include colored_btn;
+}
 
-	&:hover p{
-		background: lighten($primary, 10%);
-	}
-
-	&:active p{
-		box-shadow: 0px 0px 0px 4px rgba($primary, .4);
-	}
-
+.btn-black{
+	@include colored_btn ($color_bg:$black);
 }
 
 .profile_img{
@@ -456,6 +448,34 @@ p.text{
 
 		&:hover{
 			text-decoration: underline;
+		}
+	}
+
+	.profile_block{
+		margin-top: 16px;
+
+		.profile{
+			margin-bottom: 12px;
+
+			img{
+				margin-right: 12px;
+			}
+			.text_data{
+				.name{
+					@include font($f_size:16px);
+					margin: 0;
+					margin-bottom: 4px;
+					color: $black;
+				}
+				.text{
+					@include font($f_size:12px);
+					margin: 0;
+					color: $secondary;
+				}
+			}
+			&:last-child{
+				margin-bottom: 0;
+			}
 		}
 	}
 }
