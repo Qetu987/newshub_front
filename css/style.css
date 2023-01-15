@@ -46,7 +46,7 @@ body {
   font-family: 'Inter', sans-serif;
   font-size: 14px;
   margin: 0;
-  color: #secondary;
+  color: #6c757d;
   transition: 0.3s;
   font-weight: 400;
 }
@@ -172,12 +172,13 @@ footer .rools a:visited {
   margin-bottom: 24px;
 }
 
-.create_post {
-  width: 100%;
-  border-radius: 8px;
-  background: #fff;
-  padding: 16px;
+.block_page {
   border: #ced4da solid 1px;
+  border-radius: 8px;
+  padding: 16px;
+  background: #fff;
+  width: calc(100% - 32px);
+  margin-bottom: 24px;
 }
 
 .create_post p {
@@ -228,4 +229,121 @@ p.text {
   font-family: 'Inter', sans-serif;
   font-size: 16px;
   margin: 0;
+}
+
+.post .post_header {
+  margin-bottom: 12px;
+}
+
+.post .post_header .profile_img {
+  margin-right: 12px;
+}
+
+.post .post_header .name {
+  margin-right: 8px;
+}
+
+.post .post_title {
+  margin-left: 44px;
+}
+
+.post .post_title .name {
+  font-family: 'Inter', sans-serif;
+  font-size: 20px;
+}
+
+.post .post_body {
+  margin-left: 44px;
+  margin-top: 12px;
+  width: calc(100% - 44px);
+}
+
+.post .post_body img {
+  width: 100%;
+  border-radius: 4px;
+}
+
+.post .post_body .post_control {
+  margin-top: 16px;
+}
+
+.post .post_body .post_control .like a {
+  text-decoration: none;
+}
+
+.post .post_body .post_control .like:hover .like_img svg {
+  fill: #dc3545;
+}
+
+.post .post_body .post_control .like:hover p {
+  color: #3d4246;
+}
+
+.post .post_body .post_control .like .like_img svg {
+  fill: #6c757d;
+  transition: 0.3s;
+}
+
+.post .post_body .post_control .like p {
+  font-family: 'Inter', sans-serif;
+  font-size: 14px;
+  color: #6c757d;
+  margin: 0;
+  margin-left: 8px;
+  transition: 0.3s;
+}
+
+.post .post_body .post_control .comment {
+  margin-left: 24px;
+}
+
+.post .post_body .post_control .comment a {
+  text-decoration: none;
+}
+
+.post .post_body .post_control .comment:hover .comment_img svg {
+  fill: #3d4246;
+}
+
+.post .post_body .post_control .comment:hover p {
+  color: #3d4246;
+}
+
+.post .post_body .post_control .comment .comment_img svg {
+  fill: #6c757d;
+  transition: 0.3s;
+}
+
+.post .post_body .post_control .comment p {
+  font-family: 'Inter', sans-serif;
+  font-size: 14px;
+  color: #6c757d;
+  margin: 0;
+  margin-left: 8px;
+  transition: 0.3s;
+}
+
+.badges {
+  margin-right: 12px;
+  margin-top: 8px;
+}
+
+.badges a {
+  text-decoration: none;
+}
+
+.badges a p {
+  background: #E7F1FF;
+  color: #0d6efd;
+  margin: 0;
+  padding: 4px 10px;
+  border-radius: 4px;
+}
+
+.badges a:hover p {
+  background: #b4d3ff;
+}
+
+.badges a:visited {
+  color: #0d6efd;
 }

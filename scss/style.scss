@@ -50,7 +50,7 @@ body{
 			@include font;
 
 			margin: 0;
-			color: #secondary;
+			color: $secondary;
 			transition: $naw_transition;
 			font-weight: 400;
 
@@ -120,7 +120,6 @@ body{
 				color: $secondary;
 			}
 
-			
 		}
 		
 	}
@@ -154,7 +153,6 @@ body{
 			width: 32px;
 		}
 	}
-
 }
 
 footer{
@@ -190,15 +188,18 @@ footer{
 	}
 }
 
-.create_post{
-	width: 100%;
-	border-radius: 8px;
-	background: $white;
-
-	padding: 16px;
-
+.block_page{
 	border: $gray-400 solid 1px;
+	border-radius: 8px;
+	padding: 16px;
+	
+	background: $white;
+	width: calc(100% - 32px);
 
+	margin-bottom: 24px;
+}
+
+.create_post{
 	p{
 		margin: 0;
 	}
@@ -223,7 +224,7 @@ footer{
 		border-radius: 16px;
 		padding: 8px 16px;
 	}
-	
+
 }
 
 .btn-primary{
@@ -252,7 +253,126 @@ h3.name{
 }
 
 p.text{
-	@include font($f_size:16px)
+	@include font($f_size:16px);
 	margin: 0;
 }
 
+.post{
+	.post_header{
+		margin-bottom: 12px;
+
+		.profile_img{
+			margin-right: 12px;
+		}
+		.name{
+			margin-right: 8px;
+		}
+	}
+
+	.post_title{
+		margin-left: 44px;
+
+		.name{
+			@include font($f_size:20px);
+		}
+	}
+
+	.post_body{
+		margin-left: 44px;
+		margin-top: 12px;
+		width: calc(100% - 44px);
+
+		img{
+			width: 100%;
+			border-radius: 4px;
+		}
+
+		.post_control{
+			margin-top: 16px;
+
+			.like{
+				a{
+					text-decoration: none;
+				}
+
+				&:hover{
+					.like_img svg{
+						fill: $danger;
+					}
+					p{
+						color: darken($secondary, 20%);
+					}
+				}
+
+				.like_img{
+					svg{
+						fill: $secondary;
+						transition: $naw_transition;
+					}
+				}
+				p{
+					@include font;
+					color: $secondary;
+					margin: 0;
+					margin-left: 8px;
+					transition: $naw_transition;
+				}
+			}
+			.comment{
+				margin-left: 24px;
+
+				a{
+					text-decoration: none;
+				}
+
+				&:hover{
+					.comment_img svg{
+						fill: darken($secondary, 20%);
+					}
+					p{
+						color: darken($secondary, 20%);
+					}
+				}
+
+				.comment_img{
+					svg{
+						fill: $secondary;
+						transition: $naw_transition;
+					}
+				}
+				p{
+					@include font;
+					color: $secondary;
+					margin: 0;
+					margin-left: 8px;
+					transition: $naw_transition;
+				}
+			}
+		}
+	}
+}
+
+.badges{
+	margin-right: 12px;
+	margin-top: 8px;
+
+	a{
+		text-decoration: none;
+
+		p{
+			background: $badges_bg;
+			color: $primary;
+			margin: 0;
+			padding: 4px 10px;
+			border-radius: 4px;
+		}
+
+		&:hover p{
+			background: darken($badges_bg, 10%);
+		}
+
+		&:visited{
+			color: $primary;
+		}
+	}
+}
