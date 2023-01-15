@@ -1,3 +1,7 @@
+a {
+  text-decoration: none;
+}
+
 body {
   margin: 0;
 }
@@ -181,6 +185,14 @@ footer .rools a:visited {
   margin-bottom: 24px;
 }
 
+.block_page_secondary {
+  border-radius: 8px;
+  padding: 24px;
+  background: #E7F1FF;
+  width: calc(100% - 48px);
+  margin-bottom: 16px;
+}
+
 .create_post p {
   margin: 0;
 }
@@ -209,11 +221,11 @@ footer .rools a:visited {
 }
 
 .btn-primary:hover p {
-  background: #0257d5;
+  background: #408cfd;
 }
 
 .btn-primary:active p {
-  background: #0143a3;
+  box-shadow: 0px 0px 0px 4px rgba(13, 110, 253, 0.4);
 }
 
 .profile_img {
@@ -357,6 +369,8 @@ p.text {
 }
 
 .badges a p {
+  font-family: 'Inter', sans-serif;
+  font-size: 14px;
   background: #E7F1FF;
   color: #0d6efd;
   margin: 0;
@@ -369,9 +383,53 @@ p.text {
 }
 
 .badges a:active p {
-  background: #81b6ff;
+  box-shadow: 0px 0px 0px 4px rgba(231, 241, 255, 0.7);
 }
 
 .badges a:visited {
   color: #0d6efd;
+}
+
+.block_page_secondary .name {
+  font-family: 'Inter', sans-serif;
+  font-size: 20px;
+  font-weight: 600;
+  margin-bottom: 12px;
+}
+
+.block_page_secondary .topic_block {
+  margin-top: 16px;
+  margin-bottom: 16px;
+}
+
+.block_page_secondary .topic_block .topic {
+  margin-bottom: 12px;
+}
+
+.block_page_secondary .topic_block .topic:last-child {
+  margin-bottom: 0;
+}
+
+.block_page_secondary .topic_block .topic .text {
+  font-family: 'Inter', sans-serif;
+  font-size: 12px;
+  color: #6c757d;
+  margin: 0;
+}
+
+.block_page_secondary .topic_block .topic .name {
+  font-family: 'Inter', sans-serif;
+  font-size: 16px;
+  color: #000;
+  margin: 4px 0;
+}
+
+.block_page_secondary .show {
+  font-family: 'Inter', sans-serif;
+  font-size: 14px;
+  color: #0d6efd;
+}
+
+.block_page_secondary .show:hover {
+  text-decoration: underline;
 }

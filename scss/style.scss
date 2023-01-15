@@ -1,6 +1,10 @@
 @import "vars.scss";
 @import "mixins.scss";
 
+a{
+	text-decoration: none;
+}
+
 body{
 	margin: 0;
 }
@@ -199,6 +203,15 @@ footer{
 	margin-bottom: 24px;
 }
 
+.block_page_secondary{
+	border-radius: 8px;
+	padding: 24px;
+	background: $sub_bg;
+	width: calc(100% - 48px);
+	margin-bottom: 16px;
+}
+
+
 .create_post{
 	p{
 		margin: 0;
@@ -235,11 +248,11 @@ footer{
 	}
 
 	&:hover p{
-		background: darken($primary, 10%);
+		background: lighten($primary, 10%);
 	}
 
 	&:active p{
-		background: darken($primary, 20%);
+		box-shadow: 0px 0px 0px 4px rgba($primary, .4);
 	}
 
 }
@@ -386,7 +399,8 @@ p.text{
 		text-decoration: none;
 
 		p{
-			background: $badges_bg;
+			@include font;
+			background: $sub_bg;
 			color: $primary;
 			margin: 0;
 			padding: 4px 10px;
@@ -394,15 +408,54 @@ p.text{
 		}
 
 		&:hover p{
-			background: darken($badges_bg, 10%);
+			background: darken($sub_bg, 10%);
 		}
 
 		&:active p{
-			background: darken($badges_bg, 20%);
+			box-shadow: 0px 0px 0px 4px rgba($sub_bg, .7);
 		}
 
 		&:visited{
 			color: $primary;
+		}
+	}
+}
+
+.block_page_secondary{
+	.name{
+		@include font($f_size:20px);
+		font-weight: 600;
+		margin-bottom: 12px;
+	}
+
+	.topic_block{
+		margin-top: 16px;
+		margin-bottom: 16px;
+		.topic{
+			margin-bottom: 12px;
+
+			&:last-child{
+				margin-bottom: 0;
+			}
+			.text{
+				@include font($f_size:12px);
+				color: $secondary;
+				margin: 0;
+			}
+			.name{
+				@include font($f_size:16px);
+				color: $black;
+				margin: 4px 0;
+			}
+		}
+	}
+
+	.show{
+		@include font;
+		color: $primary;
+
+		&:hover{
+			text-decoration: underline;
 		}
 	}
 }
