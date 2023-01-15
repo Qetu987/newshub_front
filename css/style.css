@@ -212,6 +212,10 @@ footer .rools a:visited {
   background: #0257d5;
 }
 
+.btn-primary:active p {
+  background: #0143a3;
+}
+
 .profile_img {
   height: 32px;
   width: 32px;
@@ -263,6 +267,10 @@ p.text {
   border-radius: 4px;
 }
 
+.post .post_body .text {
+  color: #6c757d;
+}
+
 .post .post_body .post_control {
   margin-top: 16px;
 }
@@ -277,6 +285,14 @@ p.text {
 
 .post .post_body .post_control .like:hover p {
   color: #3d4246;
+}
+
+.post .post_body .post_control .like:active .like_img svg {
+  fill: #921925;
+}
+
+.post .post_body .post_control .like:active p {
+  color: #0d0f10;
 }
 
 .post .post_body .post_control .like .like_img svg {
@@ -307,6 +323,14 @@ p.text {
 
 .post .post_body .post_control .comment:hover p {
   color: #3d4246;
+}
+
+.post .post_body .post_control .comment:active .comment_img svg {
+  fill: #0d0f10;
+}
+
+.post .post_body .post_control .comment:active p {
+  color: #0d0f10;
 }
 
 .post .post_body .post_control .comment .comment_img svg {
@@ -342,6 +366,10 @@ p.text {
 
 .badges a:hover p {
   background: #b4d3ff;
+}
+
+.badges a:active p {
+  background: #81b6ff;
 }
 
 .badges a:visited {

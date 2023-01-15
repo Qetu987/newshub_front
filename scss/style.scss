@@ -238,6 +238,10 @@ footer{
 		background: darken($primary, 10%);
 	}
 
+	&:active p{
+		background: darken($primary, 20%);
+	}
+
 }
 
 .profile_img{
@@ -287,6 +291,10 @@ p.text{
 			border-radius: 4px;
 		}
 
+		.text{
+			color: $secondary;
+		}
+
 		.post_control{
 			margin-top: 16px;
 
@@ -301,6 +309,15 @@ p.text{
 					}
 					p{
 						color: darken($secondary, 20%);
+					}
+				}
+
+				&:active{
+					.like_img svg{
+						fill: darken($danger, 20%);
+					}
+					p{
+						color: darken($secondary, 40%);
 					}
 				}
 
@@ -331,6 +348,15 @@ p.text{
 					}
 					p{
 						color: darken($secondary, 20%);
+					}
+				}
+
+				&:active{
+					.comment_img svg{
+						fill: darken($secondary, 40%);
+					}
+					p{
+						color: darken($secondary, 40%);
 					}
 				}
 
@@ -369,6 +395,10 @@ p.text{
 
 		&:hover p{
 			background: darken($badges_bg, 10%);
+		}
+
+		&:active p{
+			background: darken($badges_bg, 20%);
 		}
 
 		&:visited{
