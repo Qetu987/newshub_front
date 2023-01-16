@@ -215,6 +215,8 @@ footer .rools a:visited {
 }
 
 .btn {
+  font-family: 'Inter', sans-serif;
+  font-size: 14px;
   text-decoration: none;
 }
 
