@@ -22,6 +22,7 @@ body{
 
 .header{
 	height: 56px;
+	border-bottom: $gray-400 solid 1px ;
 
 	.logo{
 		margin-right: 32px;
@@ -124,6 +125,10 @@ body{
 				color: $secondary;
 			}
 
+			&:hover{
+				border: lighten($primary, 20%) solid 1px;
+			}
+
 		}
 		
 	}
@@ -201,6 +206,10 @@ footer{
 	width: calc(100% - 32px);
 
 	margin-bottom: 24px;
+
+	&:hover{
+		border: darken($gray-400, 20%) solid 1px;
+	}
 }
 
 .block_page_secondary{
@@ -478,4 +487,10 @@ p.text{
 			}
 		}
 	}
+}
+
+
+.sticky{
+	position: sticky;
+	top: calc(56px + 24px);
 }

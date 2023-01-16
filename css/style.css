@@ -19,6 +19,7 @@ body {
 
 .header {
   height: 56px;
+  border-bottom: #ced4da solid 1px;
 }
 
 .header .logo {
@@ -116,6 +117,10 @@ body {
   color: #6c757d;
 }
 
+.header .search input:hover {
+  border: #72abfe solid 1px;
+}
+
 .header .profile {
   display: flex;
   align-items: center;
@@ -183,6 +188,10 @@ footer .rools a:visited {
   background: #fff;
   width: calc(100% - 32px);
   margin-bottom: 24px;
+}
+
+.block_page:hover {
+  border: #94a1ae solid 1px;
 }
 
 .block_page_secondary {
@@ -478,4 +487,9 @@ p.text {
 
 .block_page_secondary .profile_block .profile:last-child {
   margin-bottom: 0;
+}
+
+.sticky {
+  position: sticky;
+  top: calc(56px + 24px);
 }
